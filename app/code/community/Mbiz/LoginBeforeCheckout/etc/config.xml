@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * This file is part of Mbiz_LoginBeforeCheckout for Magento.
+ *
+ * @license All rights reserved
+ * @author Jacques Bodin-Hullin <@jacquesbh> <j.bodinhullin@monsieurbiz.com>
+ * @category Mbiz
+ * @package Mbiz_LoginBeforeCheckout
+ * @copyright Copyright (c) 2014 Monsieur Biz (http://monsieurbiz.com/)
+ */
+-->
+<config>
+    <modules>
+        <Mbiz_LoginBeforeCheckout>
+            <version>0.1.0</version>
+        </Mbiz_LoginBeforeCheckout>
+    </modules>
+    <global>
+        <models>
+            <mbiz_loginbeforecheckout>
+                <class>Mbiz_LoginBeforeCheckout_Model</class>
+            </mbiz_loginbeforecheckout>
+        </models>
+    </global>
+    <frontend>
+        <events>
+            <controller_action_predispatch_checkout_onepage_index>
+                <observers>
+                    <login_before_checkout>
+                        <class>mbiz_loginbeforecheckout/observer</class>
+                        <method>loginBeforeCheckout</method>
+                    </login_before_checkout>
+                </observers>
+            </controller_action_predispatch_checkout_onepage_index>
+        </events>
+    </frontend>
+</config>
