@@ -1,0 +1,3 @@
+app/code/community/Mbiz/LoginBeforeCheckout/etc/config.xml          app/code/community/Mbiz/LoginBeforeCheckout/etc/config.xml
+app/code/community/Mbiz/LoginBeforeCheckout/Model/Observer.php      app/code/community/Mbiz/LoginBeforeCheckout/Model/Observer.php
+app/etc/modules/Mbiz_LoginBeforeCheckout.xml                        app/etc/modules/Mbiz_LoginBeforeCheckout.xml
